@@ -1,0 +1,42 @@
+{
+    "name": "harrods-sandbox",
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "module": "./dist/index.mjs",
+    "scripts": {
+        "dev": "miniflare --live-reload --debug",
+        "build": "node build.js",
+        "format": "prettier --write  '*.{json,js}' 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
+        "lint": "eslint --max-warnings=0 src && prettier --check '*.{json,js}' 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
+        "test": "jest --config jestconfig.json --verbose",
+        "prepare": "husky install"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@cloudflare/workers-types": "^3.0.0",
+        "@commitlint/cli": "^16.2.1",
+        "@types/jest": "^26.0.23",
+        "@types/service-worker-mock": "^2.0.1",
+        "@typescript-eslint/eslint-plugin": "^5.12.0",
+        "@typescript-eslint/parser": "^5.12.0",
+        "esbuild": "^0.14.23",
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.4.0",
+        "eslint-plugin-import": "^2.25.4",
+        "eslint-plugin-jest": "^26.1.1",
+        "eslint-plugin-prettier": "^4.0.0",
+        "husky": "^7.0.4",
+        "jest": "^27.0.1",
+        "lint-staged": "^12.3.4",
+        "miniflare": "^2.3.0",
+        "prettier": "^2.5.1",
+        "prettier-eslint-cli": "^5.0.1",
+        "service-worker-mock": "^2.0.5",
+        "ts-jest": "^27.0.1",
+        "typescript": "^4.5.5"
+    },
+    "dependencies": {
+        "itty-router": "^2.4.10"
+    }
+}

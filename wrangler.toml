@@ -1,0 +1,14 @@
+name = "harrods-sandbox"
+type = "javascript"
+zone_id = ""
+account_id = "98d26011d91e2c6c00a1fe006dc4b865"
+route = ""
+workers_dev = true
+
+[build]
+command = "yarn && yarn build"
+
+[build.upload]
+format = "modules"
+dir = "dist"
+main = "./index.mjs"
