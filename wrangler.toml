@@ -1,7 +1,7 @@
-name = "harrods-sandbox"
+name = "cf-worker-template"
 type = "javascript"
 zone_id = ""
-account_id = "98d26011d91e2c6c00a1fe006dc4b865"
+account_id = "94b7cce949e7c369b336bdb06f38f9ad"
 route = ""
 workers_dev = true
 
